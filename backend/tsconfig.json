@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",                         // Use modern JavaScript
+    "module": "commonjs",                    // CommonJS for Node.js
+    "outDir": "dist",                        // Output folder after compilation
+    "rootDir": "src",                        // Input folder (optional, but clean)
+    "strict": true,                          // Enable all strict type checks
+    "esModuleInterop": true,                 // Allows import from CommonJS modules
+    "experimentalDecorators": true,          // If you use decorators later
+    "emitDecoratorMetadata": true,           // Needed for some decorator libs
+    "skipLibCheck": true,                    // Faster build
+    "forceConsistentCasingInFileNames": true // Prevents case mismatch bugs
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
