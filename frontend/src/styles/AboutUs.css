@@ -1,0 +1,282 @@
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    /* max-width: 1100px; */
+    margin: auto;
+    color: #222;
+    background-color: #fff;
+}
+
+.mission {
+    padding: 0px 20px;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Makes it responsive */
+    gap: 30px;
+}
+
+.about-text-title {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text-title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.about-text-title p {
+    font-size: 16px;
+    color: #444;
+    font-weight: 700;
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+
+
+
+.hero-image {
+    width: 100%;
+    /* max-height: 300px; */
+    object-fit: cover;
+    /* border-radius: 10px; */
+}
+
+.story {
+    background-color: #f5f7f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.story h2,
+.overview-content h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.timeline-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-item h3 {
+    font-size: 22px;
+    color: #444;
+}
+
+
+.overview {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.overview h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.overview-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.overview-content .text {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 280px;
+
+}
+
+.overview-content .text h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.overview-content .text p {
+    font-size: 22px;
+    color: #444;
+}
+
+.overview-content img {
+    flex: 0 0 50%;
+    max-width: 40%;
+    height: auto;
+    border-radius: 12px;
+    min-width: 180px;
+    object-fit: cover;
+}
+
+.honours {
+    margin-bottom: 40px;
+}
+
+.honours h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.honours p {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #444;
+    /* font-weight: 700; */
+}
+
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background: none;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tabs .active {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+.honour-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Horizontally center content */
+  gap: 30px;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  max-width: 1000px;
+  margin: 0 auto; /* Center the whole block in the page */
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.honour-content img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.honour-content .text {
+  max-width: 400px;
+  flex: 1 1 400px;
+}
+
+.honour-content .text h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.honour-content .text p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* ------------------------------
+   Responsive Layout - Tablet & Mobile
+------------------------------ */
+@media screen and (max-width: 992px) {
+  .mission-content,
+  .overview-content,
+  .honour-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-content .about-text-title,
+  .overview-content .text,
+  .honour-content .text {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .mission-content .about-img,
+  .overview-content img,
+  .honour-content img {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .overview-content img,
+  .honour-content img {
+    margin: 20px 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+    .honour-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .honour-content .text {
+    max-width: 100%;
+  }
+
+  .honour-content img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* ------------------------------
+   Timeline Responsiveness
+------------------------------ */
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.timeline-item {
+  flex: 1 1 100%;
+  max-width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+@media screen and (min-width: 768px) {
+  .timeline-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+}

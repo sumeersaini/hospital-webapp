@@ -1,0 +1,263 @@
+.emergency-page {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+}
+
+.emergency-banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.call-now {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    background: #d00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.call-now h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.call-now button {
+    background: white;
+    color: #d00;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.emergency-page .intro-text {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.emergency-page .intro-text h2,
+.emergency-page .hospital-info h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.emergency-page .intro-text p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hospital-info {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.hospital-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hospital-card img {
+    width: 250px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.hospital-card .details {
+    max-width: 400px;
+    text-align: left;
+}
+
+.hospital-card .details button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.why-nh {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: #004080;
+    color: white;
+}
+
+.why-nh .text {
+    flex: 1 1 500px;
+    padding-right: 30px;
+
+}
+
+.why-nh .text h3 ,.facilities .content h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.why-nh .text li , .facilities .content li{
+    font-size: 22px;
+    line-height: inherit;
+
+}
+
+.why-nh ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.why-nh img {
+    flex: 1 1 500px;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.facilities {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.facilities .content {
+    flex: 1 1 500px;
+}
+
+.facilities ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.facilities img {
+     flex: 1 1 500px;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Mobile & Tablet Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .emergency-banner {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .call-now {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .call-now h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .call-now button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .intro-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hospital-info {
+    padding: 20px;
+  }
+
+  .hospital-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .hospital-card img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .details {
+    max-width: 90%;
+  }
+
+  .why-nh {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  .why-nh .text {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .why-nh .text ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .why-nh img {
+    width: 100%;
+    max-width: 350px;
+    max-height: 230px;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  .facilities {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .facilities .content ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .facilities img {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+      max-height: 230px;
+  }
+}

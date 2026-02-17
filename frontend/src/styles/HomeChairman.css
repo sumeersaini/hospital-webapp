@@ -1,0 +1,53 @@
+.home-chairman {
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2.section-title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+}
+.inner-box-size {
+  margin: 0 auto;
+  max-width: 95%;
+  word-break: break-all;
+}
+.section-title {
+  margin-bottom: 20px;
+}
+
+.chairman-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.chairman-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.chairman-signature {
+  margin-top: 30px;
+}
+
+.chairman-signature h5 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.chairman-signature small {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+ 
+
+  .chairman-text {
+    text-align: justify;
+  }
+}

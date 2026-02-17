@@ -1,0 +1,140 @@
+/* MobileHeader styles */
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-header {
+    display: block;
+    font-family: 'HelveticaNeueMedium', sans-serif;
+  }
+
+  .top-bar {
+    background-color: #0056a1;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .top-bar .location,
+  .top-bar .phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .top-bar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .main-header {
+    background-color: white;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header-actions .icon {
+    font-size: 20px;
+    color: #0056a1;
+    cursor: pointer;
+  }
+
+  .emergency {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .siren {
+    font-size: 18px;
+  }
+
+  /* .mobile-nav {
+    background-color: #fff;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mobile-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  } */
+     .mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 9999;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .overlay-logo {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .close-icon {
+    font-size: 24px;
+    color: #0056a1;
+    cursor: pointer;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 16px 0;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-nav a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .mobile-nav a:hover {
+    color: #0056a1;
+  }
+}

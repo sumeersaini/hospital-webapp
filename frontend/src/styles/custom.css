@@ -1,0 +1,317 @@
+/*header css**/
+
+@font-face {
+  font-family: 'HelveticaNeueMedium';
+  src: url('/fonts/HelveticaNeueMedium.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+ 
+ body {
+  font-family: 'HelveticaNeueMedium', sans-serif;
+}
+
+.bold-text {
+  font-family: 'HelveticaNeueMedium', sans-serif;
+  font-weight: bold;
+}
+ 
+
+    /* Responsive Styles */
+    /* @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    .header  .nav-wrapper {
+        width: 100%;
+        align-items: flex-start;
+      }
+
+     .header .top-row {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+    .header  .bottom-row {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+     .header .bottom-row.show {
+        display: flex;
+      }
+
+      .mobile-menu-toggle {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+
+    .header  .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+    .header  .dropdown-grid {
+        grid-template-columns: 1fr;
+      }
+    } */
+/**End header**/
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* -------------------------------
+   DESKTOP STYLES (DEFAULT)
+--------------------------------*/
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 3%;
+}
+
+.logo img {
+  height: auto;
+  max-width: 180px;
+  width: 100%;
+}
+
+.header .nav-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: flex-end;
+}
+
+.header .top-row,
+.header .bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-end;
+  margin: 10px 40px 25px 0px;
+}
+
+.header .top-row a {
+  font-family: 'HelveticaNeueMedium', sans-serif;
+  font-size: 16px;
+  color: #034ea2;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.header .bottom-row a {
+  font-size: 18px;
+  font-family: 'HelveticaNeueMedium', sans-serif;
+  font-weight: 400;
+  color: #2b2a29;
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+/* APPOINTMENT BUTTON */
+.header .appointment-btn {
+  background-color: #034ea2;
+  color: #fff !important;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.header .appointment-btn:hover {
+  background-color: #00397a;
+}
+
+/* DROPDOWN STYLES */
+.appointment-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 125%;
+  right: 0;
+  background-color: #fff;
+  padding: 15px;
+  display: none;
+  border: none;
+  z-index: 1;
+  opacity: 1;
+  width: 500px;
+}
+
+.header .dropdown-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+
+.header .dropdown-card {
+  padding: 15px;
+}
+
+.header .dropdown-card.top {
+  border-bottom: 1px solid #000;
+}
+
+.header .dropdown-card:hover {
+  background-color: #f0f8ff;
+}
+
+.header .dropdown-card .icon {
+  font-size: 24px;
+  color: #0056a1;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.dropdown-card h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.dropdown-card p {
+  font-size: 14px;
+  color: #444;
+}
+
+.appointment-dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+/* MOBILE MENU TOGGLE */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #0056a1;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.header .top-row button {
+    font-family: 'HelveticaNeueMedium', sans-serif;
+    font-size: 16px;
+    color: #034ea2;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    text-decoration: none;
+}
+/* ---------------------------------------
+   RESPONSIVE MOBILE STYLES (≤768px)
+---------------------------------------- */
+@media (max-width: 768px) {
+  /* .header-container {
+    display: -webkit-inline-box;
+    padding: 0;
+  } */
+  /* .header{
+    padding: 0;
+  } */
+
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    max-width: 95px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  .header .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header .nav-wrapper.show {
+    display: flex;
+  }
+
+  .header .top-row,
+  .header .bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .header .top-row a,
+  .header .bottom-row a {
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .header .appointment-dropdown {
+    width: 100%;
+  }
+
+  .header .appointment-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .header .dropdown-menu {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+  }
+
+  .appointment-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .header .dropdown-grid {
+    grid-template-columns: 1fr;
+  }
+}

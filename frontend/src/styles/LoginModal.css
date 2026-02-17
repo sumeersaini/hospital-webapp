@@ -1,0 +1,146 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.modal-box {
+    background: white;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.login-modal-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-panel,
+.right-panel {
+    flex: 1 1 50%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    background: #e6f1ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-panel h4 {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.right-panel h2 {
+    margin-bottom: 10px;
+}
+
+span.login-icon {
+    color: #034ea2;
+    margin-right: 10px;
+    font-size: 45px;
+}
+
+.left-panel h4 {
+    padding: 15px;
+    display: inline-grid;
+    width: 100%;
+    text-align: center;
+}
+
+.right-panel input[type="text"],
+.right-panel input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.right-panel input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.otp-button {
+    padding: 10px 20px;
+    background-color: #034ea2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* ---------- Responsive Styles ---------- */
+
+@media (max-width: 768px) {
+    .login-modal-container {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        flex: 1 1 100%;
+    }
+
+    .left-panel {
+        text-align: center;
+    }
+
+    .right-panel h2 {
+        margin-bottom: 0;
+    }
+    span.login-icon {
+        font-size: 30px;
+    }
+    .left-panel h4 {
+    padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-box {
+        border-radius: 8px;
+    }
+
+    .right-panel input[type="text"] {
+        padding: 8px;
+    }
+
+    .otp-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-panel h4 {
+        font-size: 14px;
+    }
+}
